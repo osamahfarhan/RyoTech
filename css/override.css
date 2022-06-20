@@ -1,0 +1,48 @@
+
+.incubated .carousel-item,
+.graduated .carousel-item{
+    margin: 0 0 10px 0;
+}
+
+.graduated__startup figure,
+.graduated__startupfigure{
+padding: 0 10px;
+}
+#mc_embed_signup .mc-field-group{
+width: 100%;    
+padding-bottom: 0;
+min-height: auto;
+}
+.social .btn-light{
+    margin: 0!important;
+}
+
+.incubated #showLess,
+.graduated #graduatedshowLess{
+    display: none;
+}
+
+
+.incubated__startup figure img, .graduated__startup figure img 
+{max-width: 85%; max-height: 150px;margin: auto;}
+.incubated__startup p,
+.graduated__startup{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media screen and (max-width: 1199px){
+.social .btn-light{
+    margin: 0 auto!important;
+}
+}
+@media screen and (max-width: 767px){
+.incubated__startup figure img, 
+.graduated__startup figure img {max-height: 100px;}
+.incubated .carousel-item,.graduated .carousel-item{
+    margin: 0;
+}
+}
+
+
+
