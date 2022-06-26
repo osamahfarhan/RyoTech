@@ -275,14 +275,15 @@ margin: 0;
 }
 
 .cc{    
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     position:absolute;
     border-radius: 100%;
     border: 1px solid var(--down);
     box-shadow: 0 0 5px #00c8ff7c;
     top: calc( 50% - 58px);
     margin-left: calc( 22% + 25px);
+    z-index:5;
 }
 .ccc{
     width: 60%;
@@ -292,6 +293,8 @@ margin: 0;
     padding: 13% ;
     margin: 7%;
     font-size:10px;
+    z-index:6;
+    background-color: var(--down);
 
 }
 div{
@@ -327,7 +330,7 @@ div{
     content: ' ';
     position: absolute;
     width: 51%;
-    height: 50%;
+    height: 150%;
     right: -1%;
     top:  calc( 50% - 25px);
     border: 2px solid var(--non);
@@ -367,7 +370,7 @@ div{
     width: 51%;
     height: 130%;
     right: -2%;
-    bottom:  calc( 50% - 33px);
+    bottom:  calc( 50% - 25px);
     border: 2px solid var(--non);
     background-color: var(--non);
     border-bottom-left-radius: 5px;
@@ -789,96 +792,4 @@ div{
 				    <div class="sercles">
 					<div class="down"> 
 					    <div class="cercle1"></div>             <div class="m4 c1"></div>           <div class="m3 c1">Beneficiary groups</div><div class="m2 c1">Services</div><div class="m1 c1">الشركاء</div>
-					    <div class="cercle2"><div class="cc"></div> <div class="ccc"></div></div>           <div class="m4 c2">First Phase </div><div class="m3 c2">Young male and female entrepreneurs with entrepreneurial ideas and start-up companies. </div><div class="m2 c2">Providing entrepreneurs young male and female with entrepreneurial ideas or start-up companies with training, guidance, resources, and technical and financial support to enhance their continuity in real.</div><div class="m1 c2">الشركاء</div>
-					    <div class="cercle3"></div>         <div class="m4 c3">Second Phase</div><div class="m3 c3">Young male and female programmers and technicians.</div><div class="m2 c3">A technical team will be formed to find software solutions to the problems and challenges facing private sector institutions, including projects, recent- established small and entrepreneurial businesses or those in the process of implementation that suffer from digital problems and need empowerment and digital solutions or that have stumbled due to Poor experience and weak digital skills needed and also providing them Online training, guidance, resources, and technical and financial support to enhance their continuity .</div><div class="m1 c3">الشركاء</div>
-					    <div class="cercle4"></div>            <div class="m4 c4">Third Phase</div><div class="m3 c4">Young male and female graduates and those interested in digital work,</div><div class="m2 c4">Capacities of Young male and female graduates and those interested in digital work will be built in the areas of digital work and digital skills, and they will be directed and linked to digital labor markets through providing dynamic online courses, guidance, resources, to enhance their continuity</div><div class="m1 c4">الشركاء</div>
-					    </div> 
-				    </div>
-				</div>
-
-   
-       
-      
-    </div>
-  </div>
-</div>
-
-
-  
-        <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
-    <!--<script src="https://s.com/wp-content/themes/dicmain/dic/js/jquery-3.4.1.slim.min.js"></script>--> <script src="js/jquery.min.js"></script> <script src="js/popper.min.js"></script> <script src="js/bootstrap.min.js"></script> <script src="js/parallax.min.js"></script> 
-    <!-- custom js --> 
-    <script src="js/custom.js"></script> <script>
-        jQuery(document).ready(function() {
-          if (jQuery('#autoPopUp').length) {
-            jQuery('#autoPopUp').modal('show');
-          }
-        });
-      </script> <script type="text/javascript" id="contact-form-7-js-extra">
-        /*  <![CDATA[ */
-        var wpcf7 = {
-          "apiSettings": {
-            "root": "https:\/\/s.com\/ar\/wp-json\/contact-form-7\/v1",
-            "namespace": "contact-form-7\/v1"
-          },
-          "recaptcha": {
-            "messages": {
-              "empty": "Please verify that you are not a robot."
-            }
-          }
-        };
-        /* ]]> */
-         
-      </script> <script type="text/javascript" src="js/scripts.js" id="contact-form-7-js"></script> <script type="text/javascript" id="wpglobus-js-extra">
-        /*  <![CDATA[ */
-        var WPGlobus = {
-          "version": "1.9.8.1",
-          "language": "ar",
-          "enabledLanguages": ["en", "ar"]
-        };
-        /* ]]> */
-         
-      </script> <script type="text/javascript" src="js/wpglobus.min.js" id="wpglobus-js"></script> <script type="text/javascript">
-        /* Run FooBox FREE (v2.6.0) */
-        (function(FOOBOX, $,  ) {
-          FOOBOX.o = {
-            wordpress: {
-              enabled: true
-            },
-            countMessage: 'image %index of %total',
-            excludes: '.fbx-link,.nofoobox,.nolightbox,a[href*="pinterest.com/pin/create/button/"]',
-            affiliate: {
-              enabled: false
-            }
-          };
-          FOOBOX.init = function() {
-            $(".fbx-link").removeClass("fbx-link");
-            $(".foogallery-container.foogallery-lightbox-foobox, .foogallery-container.foogallery-lightbox-foobox-free, .gallery, .wp-block-gallery, .wp-caption, .wp-block-image, a:has(img[class*=wp-image-]), .foobox").foobox(FOOBOX.o);
-          };
-        })(window.FOOBOX = window.FOOBOX || {}, FooBox.$);
-        FooBox.ready(function() {
-          jQuery("body").append(" <span aria-hidden=\"true\" class=\"foobox_font_preload\" style=\"font-family:'foobox'; color:transparent; position:absolute; top:-9999px; left: -9999px;\">f</span>");
-          FOOBOX.init();
-          jQuery('body').on('post-load', function() {
-            FOOBOX.init();
-          });
-        });
-         
-      </script> <script type="text/javascript">
-        if (window.addEventListener) {
-          window.addEventListener("DOMContentLoaded", function() {
-            var arr = document.querySelectorAll("script[type='text/foobox']");
-            for (var x = 0; x < arr.length; x++) {
-              var script = document.createElement("script");
-              script.type = "text/javascript";
-              script.innerHTML = arr[x].innerHTML;
-              arr[x].parentNode.replaceChild(script, arr[x]);
-            }
-          });
-        } else {
-          console.log("FooBox does not support the current browser.");
-        }
-         
-      </script>
-    </body>
-  </html>
+					    <div class="cercle2"><div class="cc"></div> <div class="ccc"></div></div>           <div class="m4 c2">First Phase </div><div class="m3 c2">Young male and female entrepreneurs with entrepreneurial ideas and start-up companies. </div><div class="m2 c2">Providing entrepreneurs young male and female with entrepreneurial ideas or start-up companies with tra
