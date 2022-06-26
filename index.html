@@ -127,15 +127,20 @@ margin: 0;
 .c1,.c2,.c3,.c4{
     border-radius: 4px;
     padding: 2px;
-    left: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: 25px;
     margin-bottom: 25px;
     margin-right: 25px;
+    margin-left: 25px;
     text-align: center;
     position: relative;
     align-self: center;
+    
+}
+.m1{
+
+    margin-right: 25px;
     
 }
 .c1{
@@ -151,16 +156,14 @@ margin: 0;
     border: 2px solid var(--m3);
 }
 .c1{
-    margin-top: 0px;
+    margin-top: 25px;
     height: 40px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .m4{
     height: 40px;
-    font-size: 20px;
-}
-.c4{
-    bottom: 0;
+    font-size: 18px;
+    text-align: center;
 }
 .c1::after,.c2::after,.c3::after,.c4::after{
     content: "⚬";
@@ -307,10 +310,25 @@ div{
     background-color: var(--wight);
     z-index: 2;
 }
+.cercle1{
+     width: 100%;
+     height: calc( 100% + 150px);
+     top: -25px;
+}
+.cercle3{
+     width: 100%;
+     height: calc( 100% + 150px);
+     top: -25px;
+}
+.cercle4{
+     width: 100%;
+     height: calc( 100% + 150px);
+     top: -25px;
+}
 .cercle1::after{
     content: ' ';
     position: absolute;
-    width: 100%;
+    width: 51%;
     height: 50%;
     right: -1%;
     top:  25%;
@@ -361,18 +379,22 @@ div{
 .cercle2{
     position: relative;
     align-content: center;
+    background-color: var(--wight);
     z-index: 4;
 }
 .cc{
     width: 100%;
     height: auto;
-    top: calc( 50% + 25px );
     border: 2px solid var(--mid);
     background-color: var(--wight);
     border-radius: 100%;
-   
-    
 }
+.ccc{
+    width: auto;
+    height: 60%;
+    background-color: var(--down);
+}
+
 </style>
 
 
