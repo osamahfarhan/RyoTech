@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <title>How</title>
+<style>
+:root {
+  --up: #082649;
+  --down: #082649;
+  --mid: #00c8ff85;
+  --m4: #4ee375;
+  --m2: #ffd42a;
+  --m1: #dd3756;
+  --m3: #68fcff;
+  --wight: #ffffff;
+  --non: #ffffff00;
+  --black: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+body {
+	font: 12px normal Verdana, Arial, Helvetica, sans-serif;
+	color: white;
+    z-index: -1;    
+}
+.sercles{
+    width: 100%;
+    height: 100%;
+    max-width: 1500px;
+    box-sizing: border-box;
+}
+
+.down{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    width: calc( 100% + 90px);
+    height: calc( 100% + 50px);
+    display: grid;
+    grid-template-columns: 25% 100px 1fr 1fr 1fr ;
+    vertical-align: top;
+    row-gap: 25px;
+    column-gap: 50px;
+}
+.c1,.c2,.c3,.c4{
+    border-radius: 4px;
+    padding: 2px;
+    left: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    position: relative;
+    align-self: center;
+    
+}
+.c1{
+    border: 2px solid  var(--m1);
+}
+.c2{
+    border: 2px solid var(--m2);
+}
+.c4{
+    border: 2px solid var(--m4);
+}
+.c3{
+    border: 2px solid var(--m3);
+}
+.c1{
+    margin-top: 0px;
+    height: 40px;
+    font-size: 20px;
+}
+.m4{
+    height: 40px;
+    font-size: 20px;
+}
+.c4{
+    bottom: 0;
+}
+.c1::after,.c2::after,.c3::after,.c4::after{
+    content: "⚬";
+    font-size: 20px;
+    text-align: center;
+    line-height: 14px;
+    width: 16px;
+    height: 16px;
+    position: absolute;  
+    right:-11px;
+    top: calc( 50% - 9px);
+    border-radius: 100%;
+    background-color: var(--down);
+
+}
+.c1::after{
+    border: 2px solid var(--wight);
+    color:var(--m1);
+}
+.c2::after{
+    border: 2px solid   var(--wight);
+    color:var(--m2);
+}
+.c3::after{
+    border: 2px solid  var(--wight);
+    color:var(--m3);
+}
+.c4::after{
+    border: 2px solid  var(--wight);
+    color:var(--m4);
+}
+.c1::before,.c2::before,.c3::before,.c4::before{
+    content: ' ';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    left:-50px;
+    top:  50%;
+}
+.c1::before{
+    background-color: var(--m1);
+}
+.c2::before{
+    background-color: var(--m2);
+}
+.c3::before{
+    background-color: var(--m3);
+}
+.c4::before{
+    background-color: var(--m4);
+}
+.m1.c1::after,.m1.c2::after,.m1.c3::after,.m1.c4::after,.m4.c1::after,.m3.c1::before{
+    content:' ';
+    border:none;
+    width: 0;
+    height: 0;
+}
+.m4.c2::before,.m4.c3::before,.m4.c4::before{
+    height: 2px;
+    width: 51px;
+    left: -51px;
+    z-index: 3;
+}
+.m4.c1::before{
+    top:50%;
+    width:202px;
+    left: -52px;
+}
+
+.down{
+    background-color: var(--down);
+}
+.mm1,.mm2,.mm4,.mm3{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.mm1::after{
+  
+}
+.mm3::after{
+    content: ' ';
+    width: 19%;
+    height: calc( 100% + 30px);
+    position: absolute;
+    right: 0;
+    bottom:  59%;
+    border: 2px solid var(--non);
+    background-color: var(--non);
+    border-bottom-left-radius: 5px;
+    border-bottom-color: var(--m3);
+    border-left-color: var(--m3);
+}
+.mm4::after{
+    content: ' ';
+    width: 38%;
+    height: calc( 100% + 30px);
+    position: absolute;
+    right: 0;
+    bottom:  59%;
+    border: 2px solid var(--non);
+    background-color: var(--non);
+    border-bottom-left-radius: 5px;
+    border-bottom-color: var(--m4);
+    border-left-color: var(--m4);
+}
+
+.out_sercles{    
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    border-radius: 100%;
+    border: 1px solid var(--down);
+    box-shadow: 0 0 5px #00c8ff7c;
+    top: calc( 50% - 58px);
+    margin-left: calc( 22% + 25px);
+}
+.med_sercles{
+    width: 60%;
+    height: 60%;
+    border-radius: 100%;
+    text-align: center;
+    padding: 13% ;
+    margin: 7%;
+    font-size:10px;
+
+}
+div{
+    text-align: center;
+}
+.m4{
+    align-self: center;
+}
+.cercle1,.cercle4,.cercle3{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: calc( 100% + 100px);
+    top: -50px;
+    background-color: var(--wight);
+    z-index: 2;
+}
+.cercle1::after{
+    content: ' ';
+    position: absolute;
+    width: 51%;
+    height: 50%;
+    right: -1%;
+    top:  calc( 25% + 25px);
+    border: 2px solid var(--non);
+    background-color: var(--non);
+    border-top-left-radius: 5px;
+    border-top-color: var(--m1);
+    border-left-color: var(--m1);
+}
+.cercle3::after{
+    content: ' ';
+    position: absolute;
+    width: 25%;
+    height: 51%;
+    right: -2%;
+    bottom:  calc( 50% - 2px);
+    border: 2px solid var(--non);
+    background-color: var(--non);
+    border-bottom-left-radius: 5px;
+    border-bottom-color: var(--m3);
+    border-left-color: var(--m3);
+}
+.cercle3::before{
+    content: ' ';
+    position: absolute;
+    width: 51%;
+    height: 51%;
+    right: -2%;
+    bottom:  calc( 50% - 2px);
+    border: 2px solid var(--non);
+    background-color: var(--non);
+    border-left-color: var(--m4);
+}
+
+.cercle4::after{
+    content: ' ';
+    position: absolute;
+    width: 51%;
+    height: 120%;
+    right: -2%;
+    bottom:  calc( 50% - 2px);
+    border: 2px solid var(--non);
+    background-color: var(--non);
+    border-bottom-left-radius: 5px;
+    border-bottom-color: var(--m4);
+    border-left-color: var(--m4);
+}
+.cercle2{
+    position: relative;
+    align-content: center;
+    z-index: 4;
+}
+.img2{
+    width: 100%;
+    height: auto;
+    top: calc( 50% + 25px );
+}
+</style>
+<body>
+    <section class="sercles">
+        <div class="down"> 
+            <div class="cercle1"></div>             <div class="m4 c1"></div>           <div class="m3 c1">Beneficiary groups</div><div class="m2 c1">Services</div><div class="m1 c1">الشركاء</div>
+            <div class="cercle2"><img src="img2.png" alt="img" class="img2" ></div>           <div class="m4 c2">First Phase </div><div class="m3 c2">Young male and female entrepreneurs with entrepreneurial ideas and start-up companies. </div><div class="m2 c2">Providing entrepreneurs young male and female with entrepreneurial ideas or start-up companies with training, guidance, resources, and technical and financial support to enhance their continuity in real.</div><div class="m1 c2">الشركاء</div>
+            <div class="cercle3"></div>         <div class="m4 c3">Second Phase</div><div class="m3 c3">Young male and female programmers and technicians.</div><div class="m2 c3">A technical team will be formed to find software solutions to the problems and challenges facing private sector institutions, including projects, recent- established small and entrepreneurial businesses or those in the process of implementation that suffer from digital problems and need empowerment and digital solutions or that have stumbled due to Poor experience and weak digital skills needed and also providing them Online training, guidance, resources, and technical and financial support to enhance their continuity .</div><div class="m1 c3">الشركاء</div>
+            <div class="cercle4"></div>            <div class="m4 c4">Third Phase</div><div class="m3 c4">Young male and female graduates and those interested in digital work,</div><div class="m2 c4">Capacities of Young male and female graduates and those interested in digital work will be built in the areas of digital work and digital skills, and they will be directed and linked to digital labor markets through providing dynamic online courses, guidance, resources, to enhance their continuity</div><div class="m1 c4">الشركاء</div>
+            </div> 
+    </section>
+</body>
+</html>
