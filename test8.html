@@ -16,286 +16,351 @@
   --wight: #ffffff;
   --non: #ffffff00;
   --black: black;
+  --afw: 16px;
+  --afh: 16px;
+  --afm: 16px;
+
 }
-* {
+*{
+    font: 12px normal Verdana, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+.bodysercles {
+	font: 12px normal Verdana, Arial, Helvetica, sans-serif;
+	color: white;
+    z-index: -1;    
     margin: 0;
     padding: 0;
     outline: none;
     text-align: center;
     vertical-align: middle;
     color: white;
+    max-width: 1500px;
+    max-height: 815px;
+    position: relative;
+
 }
-body {
-	font: 12px normal Verdana, Arial, Helvetica, sans-serif;
-	color: white;
-    z-index: -1;    
-}
+body{ margin: 0; padding: 0;}
 .sercles{
+    position: relative;
     width: 100%;
     height: 100%;
-    max-width: 1500px;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
 }
 
-.down{
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    width: calc( 100% + 90px);
-    height: calc( 100% + 50px);
-    display: grid;
-    grid-template-columns: 25% 100px 1fr 1fr 1fr ;
-    vertical-align: top;
-    row-gap: 25px;
-    column-gap: 50px;
-}
-.c1,.c2,.c3,.c4{
-    border-radius: 4px;
-    padding: 2px;
-    left: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
+.down{    
     position: relative;
-    align-self: center;
-    
+    width:100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3% 20% 6.6%  auto  3.3% auto  3.3%  auto  3.3%  auto  3.3% ;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+
+}
+
+.t1,.t2,.t3,.t4,.t5,.t6,.t7,.t8,.t9,.t10,.t11,.t12{
+    margin-top: 5%;
 }
 .c1{
     border: 2px solid  var(--m1);
+    border-radius: 4px;
+    color: var(--m1);
 }
 .c2{
     border: 2px solid var(--m2);
-}
-.c4{
-    border: 2px solid var(--m4);
+    border-radius: 4px;
+    color: var(--m2);
 }
 .c3{
     border: 2px solid var(--m3);
-}
-.c1{
-    margin-top: 0px;
-    height: 40px;
-    font-size: 20px;
-}
-.m4{
-    height: 40px;
-    font-size: 20px;
+    border-radius: 4px;
+    color: var(--m3);
 }
 .c4{
-    bottom: 0;
+    border: 2px solid var(--m4);
+    border-radius: 4px;
+    color: var(--m4);
 }
-.c1::after,.c2::after,.c3::after,.c4::after{
+
+.down{
+    position: relative;
+    grid-template-columns: 3% 20%  3.3%   3.3%  auto  3.3% auto  3.3% auto  3.3% auto  3.3% ;
+    background-color: var(--down);
+
+}
+.t4,.t6,.t8,.t10{
+    padding-top: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    position: relative;
+    height: 2px;
+    top:calc( 50% - 2px);
+}
+.t4::before,.t6::before,.t8::before,.t10::before{
     content: "⚬";
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     line-height: 14px;
     width: 16px;
     height: 16px;
     position: absolute;  
     right:-11px;
-    top: calc( 50% - 9px);
+    top: calc( 50% - 8px - 4px);
     border-radius: 100%;
     background-color: var(--down);
-
+    border : 2px solid var(--wight);
 }
-.c1::after{
-    border: 2px solid var(--wight);
+.t2.c2{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: var(--wight);
+}
+.t2.c2,.t2.c3,.t2.c4,.t1.c2,.t1.c1,.t1.c3,.t1.c4{
+    background-color: var(--wight);
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+.t3.c1,.t2.c1,.t3.c2,.t3.c3,.t3.c4{
+    border-radius: 0;
+    border: none;
+    background-color: var(--wight);
+    padding: 0;
+    margin: 0;
+}
+.t2{
+    position: inherit;
+}
+
+.cer1::after {
+  content: "";
+  display: block;
+  padding-bottom: 51%;
+}
+.cer1{
+    height: 150%;
+    width: 100%;
+    background-color:var(--wight);
+    position: relative;
+    display: block;
+    top: -25%;
+    right: 0;
+    border-radius: 100%;
+    border: 2px solid var(--down);
+    box-shadow: 0 0 5px #00c8ff7c;
+    text-overflow: clip;
+    z-index: 5;
+}
+.cer2{
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    position: relative;
+    border-radius: 100%;
+    text-overflow: clip;
+    display: block;
+    background-color: var(--down);
+    border-radius: 100%;
+    text-align: center;
+    text-overflow: clip;
+    z-index: 6;
+}
+.cer2 span{
+    position: relative;
+    top:20%;
+    text-align: center;
+    text-align: center;
+    text-overflow: clip;
+}
+
+.c,.o,.l,.k{
+    font-size: 18px;
+    text-align: center;
+    line-height: 14px;
+    width: 16px;
+    height: 16px;
+    position: absolute;  
+    border-radius: 100%;
+    background-color: var(--wight);
+    border-radius: 100%;
+    border : 2px solid var(--down);
+}
+.c{
+    top: -12px;
+    left:calc( 50% - 5px );
     color:var(--m1);
 }
-.c2::after{
-    border: 2px solid   var(--wight);
+.o{
+    right:-12px;
+    bottom: calc( 50% - 5px);
     color:var(--m2);
 }
-.c3::after{
-    border: 2px solid  var(--wight);
+.l{
+    bottom:15%;
+    right: 4%;
     color:var(--m3);
 }
-.c4::after{
-    border: 2px solid  var(--wight);
+.k{
+    bottom:-12px;
+    left: calc( 50% - 5px );
     color:var(--m4);
 }
-.c1::before,.c2::before,.c3::before,.c4::before{
-    content: ' ';
+.t2.c1::after,.t2.c2::after,.t2.c3::after,.t2.c4::after{
+    content: '';
     position: absolute;
-    width: 50px;
-    height: 2px;
-    left:-50px;
-    top:  50%;
-}
-.c1::before{
-    background-color: var(--m1);
-}
-.c2::before{
-    background-color: var(--m2);
-}
-.c3::before{
-    background-color: var(--m3);
-}
-.c4::before{
-    background-color: var(--m4);
-}
-.m1.c1::after,.m1.c2::after,.m1.c3::after,.m1.c4::after,.m4.c1::after,.m3.c1::before{
-    content:' ';
-    border:none;
-    width: 0;
-    height: 0;
-}
-.m4.c2::before,.m4.c3::before,.m4.c4::before{
-    height: 2px;
-    width: 51px;
-    left: -51px;
+    border: 2px solid rgba(255, 0, 0, 0);
     z-index: 3;
-}
-.m4.c1::before{
-    top:50%;
-    width:202px;
-    left: -52px;
-}
-
-.down{
-    background-color: var(--down);
-}
-.mm1,.mm2,.mm4,.mm3{
-    position: relative;
-    padding: 0;
-    margin: 0;
-}
-.mm1::after{
-  
-}
-.mm3::after{
-    content: ' ';
-    width: 19%;
-    height: calc( 100% + 30px);
-    position: absolute;
-    right: 0;
-    bottom:  59%;
-    border: 2px solid var(--non);
-    background-color: var(--non);
-    border-bottom-left-radius: 5px;
-    border-bottom-color: var(--m3);
-    border-left-color: var(--m3);
-}
-.mm4::after{
-    content: ' ';
-    width: 38%;
-    height: calc( 100% + 30px);
-    position: absolute;
-    right: 0;
-    bottom:  59%;
-    border: 2px solid var(--non);
-    background-color: var(--non);
-    border-bottom-left-radius: 5px;
-    border-bottom-color: var(--m4);
-    border-left-color: var(--m4);
-}
-
-.out_sercles{    
     width: 100px;
-    height: 100px;
-    position:absolute;
-    border-radius: 100%;
-    border: 1px solid var(--down);
-    box-shadow: 0 0 5px #00c8ff7c;
-    top: calc( 50% - 58px);
-    margin-left: calc( 22% + 25px);
-}
-.med_sercles{
-    width: 60%;
-    height: 60%;
-    border-radius: 100%;
-    text-align: center;
-    padding: 13% ;
-    margin: 7%;
-    font-size:10px;
+    height: 10px;
 
 }
-div{
-    text-align: center;
-}
-.m4{
-    align-self: center;
-}
-.cercle1,.cercle4,.cercle3{
-    position: relative;
+.t2.c1{
+    z-index: 5;
     padding: 0;
     margin: 0;
-    width: 100%;
-    height: calc( 100% + 100px);
-    top: -50px;
-    background-color: var(--wight);
-    z-index: 2;
 }
-.cercle1::after{
-    content: ' ';
-    position: absolute;
-    width: 51%;
-    height: 50%;
-    right: -1%;
-    top:  calc( 25% + 25px);
-    border: 2px solid var(--non);
-    background-color: var(--non);
-    border-top-left-radius: 5px;
+.t2.c3{
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+}
+.t2.c4{
+    z-index: 4;
+    padding: 0;
+    margin: 0;
+}
+.t2.c1::after{
     border-top-color: var(--m1);
     border-left-color: var(--m1);
+    border-top-left-radius: 5px;
+    width: 65%;
+    left: calc( 50% + 5px);
+    top: calc( 50% - 1px);
 }
-.cercle3::after{
-    content: ' ';
-    position: absolute;
-    width: 25%;
-    height: 51%;
-    right: -2%;
-    bottom:  calc( 50% - 2px);
-    border: 2px solid var(--non);
-    background-color: var(--non);
-    border-bottom-left-radius: 5px;
+.t2.c2::after{
+    border-top-color: var(--m2);
+    width: 20%;
+    right: -18%;
+    top: 50%;
+}
+.t2.c3::after{
     border-bottom-color: var(--m3);
     border-left-color: var(--m3);
-}
-.cercle3::before{
-    content: ' ';
-    position: absolute;
-    width: 51%;
-    height: 51%;
-    right: -2%;
-    bottom:  calc( 50% - 2px);
-    border: 2px solid var(--non);
-    background-color: var(--non);
-    border-left-color: var(--m4);
-}
-
-.cercle4::after{
-    content: ' ';
-    position: absolute;
-    width: 51%;
-    height: 120%;
-    right: -2%;
-    bottom:  calc( 50% - 2px);
-    border: 2px solid var(--non);
-    background-color: var(--non);
     border-bottom-left-radius: 5px;
+    width: 25%;
+    left: calc( 100% - 6% - 3px);
+    bottom: calc( 50% - 2px);
+    height: 50%;
+    z-index: 3;
+}
+.t2.c4::after{
     border-bottom-color: var(--m4);
     border-left-color: var(--m4);
-}
-.cercle2{
-    position: relative;
-    align-content: center;
+    border-bottom-left-radius: 5px;
+    width: 65%;
+    left: calc( 50% + 5px);
+    bottom: calc( 50% - 1px);
+    height: 150%;
     z-index: 4;
 }
-.img2{
+.ctext{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.t12{
+    margin: 0;
+    padding: 0;
+    height: 0;
+    border:none;
+}
+.t5,.t7,.t9,.t11{
+    align-self: center;
+    font-size: 5px;
+}
+.t5,.c1{
+    font-size: 16px;
+}
+.t2.c1{
+    height: 105px;
+    align-self : stretch;
+}
+.c1{
+    padding: 5%;
+}
+.t5.c1{
+    padding-top: 0;
+    margin: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    position: relative;
+    height: 2px;
+    top:3px;
+    border-radius: 0;
     width: 100%;
-    height: auto;
-    top: calc( 50% + 25px );
+    left: -2px;
+}
+.t4.c1::before{
+    content: none;
 }
 </style>
 <body>
-    <section class="sercles">
+    
+<div class="bodysercles" dir="ltr">
+    <div class="sercles">
         <div class="down"> 
-            <div class="cercle1"></div>             <div class="m4 c1"></div>           <div class="m3 c1">Beneficiary groups</div><div class="m2 c1">Services</div><div class="m1 c1">الشركاء</div>
-            <div class="cercle2"><img src="img2.png" alt="img" class="img2" ></div>           <div class="m4 c2">First Phase </div><div class="m3 c2">Young male and female entrepreneurs with entrepreneurial ideas and start-up companies. </div><div class="m2 c2">Providing entrepreneurs young male and female with entrepreneurial ideas or start-up companies with training, guidance, resources, and technical and financial support to enhance their continuity in real.</div><div class="m1 c2">الشركاء</div>
-            <div class="cercle3"></div>         <div class="m4 c3">Second Phase</div><div class="m3 c3">Young male and female programmers and technicians.</div><div class="m2 c3">A technical team will be formed to find software solutions to the problems and challenges facing private sector institutions, including projects, recent- established small and entrepreneurial businesses or those in the process of implementation that suffer from digital problems and need empowerment and digital solutions or that have stumbled due to Poor experience and weak digital skills needed and also providing them Online training, guidance, resources, and technical and financial support to enhance their continuity .</div><div class="m1 c3">الشركاء</div>
-            <div class="cercle4"></div>            <div class="m4 c4">Third Phase</div><div class="m3 c4">Young male and female graduates and those interested in digital work,</div><div class="m2 c4">Capacities of Young male and female graduates and those interested in digital work will be built in the areas of digital work and digital skills, and they will be directed and linked to digital labor markets through providing dynamic online courses, guidance, resources, to enhance their continuity</div><div class="m1 c4">الشركاء</div>
-            </div> 
-    </section>
+            <div class="t1 c1"></div> <div class="t2 c1"></div>                                                                                                                                                                                                             <div class="t3 c1"></div> <div class="t4 c1"></div> 
+            <div class="t5 c1"></div> <div class="t6 c1"></div> 
+            <div class="t7 c1">Beneficiary groups</div> <div class="t8 c1"></div>  
+            <div class="t9 c1">Services</div> <div class="t10 c1"></div> 
+            <div class="t11 c1"> parteners </div><div class="t12 c1"></div>
+            <div class="t1 c2"></div> <div class="t2 c2"><div class="cer1"><span  class="c">⚬</span> <span  class="o">⚬</span> <span  class="l">⚬</span><span  class="k">⚬</span><div class="cer2"> <span class="ctext"> حاضنة الاعمال الرقمية</span> </div></div> </div> <div class="t3 c2">  </div> <div class="t4 c2"></div> 
+            <div class="t5 c2"> First Phase </div> <div class="t6 c2"></div> 
+            <div class="t7 c2">Young male and female entrepreneurs with entrepreneurial ideas and start-up companies. </div> <div class="t8 c2"></div>  
+            <div class="t9 c2">Providing entrepreneurs young male and female with entrepreneurial ideas or start-up companies with training, guidance, resources, and technical and financial support to enhance their continuity in real.</div> <div class="t10 c2"></div> 
+            <div class="t11 c2"></div><div class="t12 c2"></div>
+            <div class="t1 c3"></div> <div class="t2 c3"></div>                                                                                                                                                                                                              <div class="t3 c3"></div> <div class="t4 c3"></div> 
+            <div class="t5 c3">Second Phase</div> <div class="t6 c3"></div> 
+            <div class="t7 c3">Young male and female programmers and technicians. </div><div class="t8 c3"></div>  
+            <div class="t9 c3"> A technical team will be formed to find software solutions to the problems and challenges facing private sector institutions, including projects, recent- established small and entrepreneurial businesses or those in the process of implementation that suffer from digital problems and need empowerment and digital solutions or that have stumbled due to Poor experience and weak digital skills needed and also providing them Online training, guidance, resources, and technical and financial support to enhance their continuity .</div><div class="t10 c3"></div> 
+            <div class="t11 c3"></div><div class="t12 c3"></div>
+            <div class="t1 c4"></div> <div class="t2 c4"></div>                                                                                                                                                                                                              <div class="t3 c4"></div> <div class="t4 c4"></div> 
+            <div class="t5 c4">Third Phase</div> <div class="t6 c4"></div> 
+            <div class="t7 c4">Young male and female graduates and those interested in digital work,</div> <div class="t8 c4"></div>  
+            <div class="t9 c4">  Capacities of Young male and female graduates and those interested in digital work will be built in the areas of digital work and digital skills, and they will be directed and linked to digital labor markets through providing dynamic online courses, guidance, resources, to enhance their continuity.</div> <div class="t10 c4"></div> 
+            <div class="t11 c4">  Capacities of Young male and female graduates and those interested in digital work will be built in the areas of digital work and digital skills, and they will be directed and linked to digital labor markets through providing dynamic online courses, guidance, resources, to enhance their continuity</div><div class="t12 c4"></div>
+        </div>
+    </div>
 </body>
 </html>
+            
+<!--
+
+                    <div class="m4 c2">   <div class="cercle1"></div>  </div>           <div class="m3 c2">Beneficiary groups</div><div class="m2 c2">Services</div><div class="m1 c2">الشركاء</div>
+					    
+                    <div > <div class="m4 c2"> First Phase </div><div class="cercle2"><span  class="cc"><span  class="ccc"></span></span><span  class="c">⚬</span> <span  class="o">⚬</span> <span  class="k">⚬</span> <span  class="l">⚬</span><span  class="kk">حاضنة الاعمال الرقمية</span> </div>  </div><div class="m3 c2">Young male and female entrepreneurs with entrepreneurial ideas and start-up companies. </div><div class="m2 c2">
+                        Providing entrepreneurs young male and female with entrepreneurial ideas or start-up companies with training, guidance, resources, and technical and financial support to enhance their continuity in real.</div><div class="m1 c2">الشركاء</div>
+					            <div class="m4 c3"><div class="cercle3"></div> Second Phase</div><div class="m3 c3">
+                                    Young male and female programmers and technicians.</div><div class="m2 c3">
+                                        A technical team will be formed to find software solutions to the problems and challenges facing private sector institutions, including projects, recent- established small and entrepreneurial businesses or those in the process of implementation that suffer from digital problems and need empowerment and digital solutions or that have stumbled due to Poor experience and weak digital skills needed and also providing them Online training, guidance, resources, and technical and financial support to enhance their continuity .</div><div class="m1 c3">
+                                            الشركاء</div>
+					              <div class="m4 c4"> <div class="cercle4"></div> Third Phase</div><div class="m3 c4">Young male and female graduates and those interested in digital work,</div><div class="m2 c4">
+                                      Capacities of Young male and female graduates and those interested in digital work will be built in the areas of digital work and digital skills, and they will be directed and linked to digital labor markets through providing dynamic online courses, guidance, resources, to enhance their continuity
+                                    </div><div class="m1 c4">الشركاء</div>
+					    </div> 
+        </div>
+    </div>
+</html>
+-->
+
