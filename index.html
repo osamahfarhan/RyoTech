@@ -41,7 +41,12 @@
     position: relative;
 
 }
-body{ margin: 0; padding: 0;}
+html,body{ 
+    margin: 0;
+ padding: 0;
+ max-width: 1500px;
+    max-height: 820px;
+}
 .sercles{
     position: relative;
     width: 100%;
@@ -49,6 +54,8 @@ body{ margin: 0; padding: 0;}
     margin: 0;
     padding: 0;
     background-color: aqua;
+    max-width: 1500px;
+    max-height: 820px;
 }
 
 .down{    
@@ -56,15 +63,19 @@ body{ margin: 0; padding: 0;}
     width:100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 3% 20% 6.6%  auto  3.3% auto  3.3%  auto  3.3%  auto  3.3% ;
+    grid-template-columns: 3% 22% 6.6%  auto  3.3% auto  3.3%  auto  3.3%  auto  3.3% ;
     vertical-align: top;
     margin: 0;
     padding: 0;
+    text-align: center;
+    position: relative;
+    align-self: center;
 
 }
 
 .t1,.t2,.t3,.t4,.t5,.t6,.t7,.t8,.t9,.t10,.t11,.t12{
     margin-top: 5%;
+    padding: 2px;
 }
 .c1{
     border: 2px solid  var(--m1);
@@ -89,7 +100,7 @@ body{ margin: 0; padding: 0;}
 
 .down{
     position: relative;
-    grid-template-columns: 3% 20%  3.3%   3.3%  auto  3.3% auto  3.3% auto  3.3% auto  3.3% ;
+    grid-template-columns: 3% 15%  3.3%   3.3%  auto  3.3% auto  3.3% auto  3.3% auto  3.3% ;
     background-color: var(--down);
 
 }
@@ -144,16 +155,17 @@ body{ margin: 0; padding: 0;}
 .cer1::after {
   content: "";
   display: block;
-  padding-bottom: 51%;
+  padding-bottom: 60%;
+
 }
 .cer1{
-    height: 150%;
-    width: 100%;
+    height: 127%;
+    width: 80%;
     background-color:var(--wight);
     position: relative;
     display: block;
     top: -25%;
-    right: 0;
+    left: 10%;
     border-radius: 100%;
     border: 2px solid var(--down);
     box-shadow: 0 0 5px #00c8ff7c;
@@ -201,13 +213,13 @@ body{ margin: 0; padding: 0;}
     color:var(--m1);
 }
 .o{
-    right:-12px;
-    bottom: calc( 50% - 5px);
+    right: -10%;
+    bottom: calc( 50% + 2px);
     color:var(--m2);
 }
 .l{
     bottom:15%;
-    right: 4%;
+    right: -5%;
     color:var(--m3);
 }
 .k{
@@ -246,11 +258,12 @@ body{ margin: 0; padding: 0;}
     width: 65%;
     left: calc( 50% + 5px);
     top: calc( 50% - 1px);
+    height: 100%;
 }
 .t2.c2::after{
     border-top-color: var(--m2);
-    width: 20%;
-    right: -18%;
+    width: 25%;
+    right: -25%;
     top: 50%;
 }
 .t2.c3::after{
@@ -258,7 +271,7 @@ body{ margin: 0; padding: 0;}
     border-left-color: var(--m3);
     border-bottom-left-radius: 5px;
     width: 25%;
-    left: calc( 100% - 6% - 3px);
+    left: calc( 100% - 6% - 8px);
     bottom: calc( 50% - 2px);
     height: 50%;
     z-index: 3;
@@ -270,7 +283,7 @@ body{ margin: 0; padding: 0;}
     width: 65%;
     left: calc( 50% + 5px);
     bottom: calc( 50% - 1px);
-    height: 150%;
+    height: 250%;
     z-index: 4;
 }
 .ctext{
@@ -292,8 +305,6 @@ body{ margin: 0; padding: 0;}
     font-size: 16px;
 }
 .t2.c1{
-    height: 105px;
-    align-self : stretch;
 }
 .c1{
     padding: 5%;
@@ -306,7 +317,7 @@ body{ margin: 0; padding: 0;}
     border-bottom: none;
     position: relative;
     height: 2px;
-    top:3px;
+    top:calc(20% - 8px);
     border-radius: 0;
     width: 100%;
     left: -2px;
@@ -317,6 +328,7 @@ body{ margin: 0; padding: 0;}
 .t2.c2{
 }
 .cer1{
+    top:0;
 }
 </style>
 <body>
