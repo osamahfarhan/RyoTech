@@ -63,7 +63,7 @@ html,body{
     width:100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 3% 22% 6.6%  auto  3.3% auto  3.3%  auto  3.3%  auto  3.3% ;
+    grid-template-columns: 2% 25% 6.6%  auto  3.3% auto  3.3%  auto  3.3%  auto  3.3% ;
     vertical-align: top;
     margin: 0;
     padding: 0;
@@ -100,7 +100,7 @@ html,body{
 
 .down{
     position: relative;
-    grid-template-columns: 3% 15%  3.3%   3.3%  auto  3.3% auto  3.3% auto  3.3% auto  3.3% ;
+    grid-template-columns: 2% 16%  2%   2%  auto  3% auto  3% auto  3% auto  3% ;
     background-color: var(--down);
 
 }
@@ -121,7 +121,7 @@ html,body{
     width: 16px;
     height: 16px;
     position: absolute;  
-    right:-11px;
+    right:-10px;
     top: calc( 50% - 8px - 4px);
     border-radius: 100%;
     background-color: var(--down);
@@ -151,26 +151,30 @@ html,body{
 .t2{
     position: inherit;
 }
-
-.cer1::after {
+.cer1:after {
   content: "";
   display: block;
-  padding-bottom: 60%;
-
+  padding-bottom: 100%;
 }
 .cer1{
-    height: 127%;
-    width: 80%;
+    height: 84%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     background-color:var(--wight);
     position: relative;
-    display: block;
-    top: -25%;
-    left: 10%;
+    display:block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     border-radius: 100%;
     border: 2px solid var(--down);
     box-shadow: 0 0 5px #00c8ff7c;
     text-overflow: clip;
     z-index: 5;
+    margin-top: 5%;
+    margin-bottom: 3%;
 }
 .cer2{
     height: 90%;
@@ -213,13 +217,13 @@ html,body{
     color:var(--m1);
 }
 .o{
-    right: -10%;
-    bottom: calc( 50% + 2px);
+    right: -12px;
+    bottom: calc( 50% - 16px);
     color:var(--m2);
 }
 .l{
-    bottom:15%;
-    right: -5%;
+    bottom:8%;
+    right: calc( 20% - 22px);
     color:var(--m3);
 }
 .k{
@@ -271,9 +275,9 @@ html,body{
     border-left-color: var(--m3);
     border-bottom-left-radius: 5px;
     width: 25%;
-    left: calc( 100% - 6% - 8px);
+    left: calc( 100% - 12% + 2px);
     bottom: calc( 50% - 2px);
-    height: 50%;
+    height: 100%;
     z-index: 3;
 }
 .t2.c4::after{
@@ -299,15 +303,33 @@ html,body{
 }
 .t5,.t7,.t9,.t11{
     align-self: center;
-    font-size: 5px;
+    font-size: 10px;
+    padding-top: 3%;
+    box-sizing: border-box;
 }
 .t5,.c1{
-    font-size: 16px;
-}
-.t2.c1{
+    font-size: 10px;
 }
 .c1{
-    padding: 5%;
+    padding-top: 2%;
+     margin-top: 1%;
+}
+.t6.c1::before{
+    content: none;
+}
+.c2,.c3,.c4{
+    align-self: stretch;
+    text-align: center;
+    vertical-align:text-bottom;
+    align-content:space-between;
+    justify-content: center;
+
+}
+.t5{
+    align-self: center;
+}
+.t7.c1,.t9.c1,.t11.c1{
+    align-self: center;
 }
 .t5.c1{
     padding-top: 0;
@@ -317,18 +339,19 @@ html,body{
     border-bottom: none;
     position: relative;
     height: 2px;
-    top:calc(20% - 8px);
+    top:calc(20% - 5px);
     border-radius: 0;
-    width: 100%;
+    width: 110%;
     left: -2px;
 }
 .t4::before{
     content: none;
 }
-.t2.c2{
+.c4{
+    margin-bottom: 5%;
 }
-.cer1{
-    top:0;
+.t7.c4,.t7.c3,.t9.c4,.t9.c3{
+    padding-bottom: 2%;
 }
 </style>
 <body>
